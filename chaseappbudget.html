@@ -65,7 +65,12 @@
 </head>
 
 <body>
-  
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script> 
+
 <div class="container content" id="title">
   <h2 class="display-2"><br>Case study:<br>chase app extension.</h2><br>
   <h3>a prototype extension of the Chase banking app that assists users with budgeting and saving their money*</h3>
@@ -125,16 +130,13 @@
     <div class="container content-description">
       <h5>In order to draw some inspiration and to see what we could do better, we also performed a competitive audit of several similar existing apps or services which perform tasks similar to what we aimed for.
       </h5>
-      <img class="img-fluid mx-auto d-block" src="competetivechart.png" alt="competetive audit" width="600" height:"485" data-toggle="popover" tabindex="50" data-content="test <b>text</b>" data-placement="right">
-      <br><p>BB&T Banking
-      <br>BB&T is a small bank based in North Eastern US. Their app allows budgeting for mortgages, loans, and spending. According to our research, their banking services are not as developed as major banks, however their mobile app still offers some of the best functionalities.
-      <br><br>Mint
-      <br>Mint attracts many users with its clean design and intuitive UX flows, but it might raise security concerns and it often has delays in updating the data since it is an external budgeting app. The required repetitive refreshing can be easily avoided by integrating its features into a banking app.
-      <br><br>Bank of America
-      <br>Bank of America updated their mobile app on Oct 22, and their budgeting feature seems to have been removed. The alert to prevent overdrafts is more obvious now but expenses are more difficult to track without categories.
-      <br><br>Chase Desktop
-      <br>The 10+ default categories for budgeting might be too overwhelming for some users and a mobile device interface. The feature shown is currently only accessible by credit card users. When we design the feature for its mobile app, we can provide access to debit card users and simplify the desktop design for mobile style.
-        <br><br>
+      <img class="img-fluid mx-auto d-block" src="competetivechart.png" alt="competetive audit" width="600" height:"485">
+      <p>Click to learn more about our competitors:</p>
+      <a href="#" data-toggle="popover" title="BB&T Banking" data-content="BB&T is a small bank based in North Eastern US. Their app allows budgeting for mortgages, loans, and spending. According to our research, their banking services are not as developed as major banks, however their mobile app still offers some of the best functionalities.">BB&T Banking, </a>
+      <a href="#" data-toggle="popover" title="Mint" data-content="Mint attracts many users with its clean design and intuitive UX flows, but it might raise security concerns and it often has delays in updating the data since it is an external budgeting app. The required repetitive refreshing can be easily avoided by integrating its features into a banking app.">Mint, </a>
+      <a href="#" data-toggle="popover" title="Bank of America" data-content="Bank of America updated their mobile app on Oct 22, and their budgeting feature seems to have been removed. The alert to prevent overdrafts is more obvious now but expenses are more difficult to track without categories.">Bank of America, </a>
+      <a href="#" data-toggle="popover" title="Chase Desktop" data-content="The 10+ default categories for budgeting might be too overwhelming for some users and a mobile device interface. The feature shown is currently only accessible by credit card users. When we design the feature for its mobile app, we can provide access to debit card users and simplify the desktop design for mobile style."> & Chase Desktop.</a>
+      <br><br>
       </p>
     </div>
 </div>
